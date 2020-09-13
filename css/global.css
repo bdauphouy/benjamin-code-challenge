@@ -1,0 +1,41 @@
+:root {
+  --blue: #000431;
+  --yellow: #FFF500;
+  --title-font: 'gtfxebo';
+  --subtitle-font: 'gtfxebl';
+  --paragraph-font: 'gtfr'
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--blue);
+  padding: 40px;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  border: solid 5px var(--yellow);
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--yellow);
+  left: 0;
+  bottom: -2px;
+}
